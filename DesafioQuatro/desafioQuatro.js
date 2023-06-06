@@ -4,36 +4,36 @@ function listaPessoas() {
 
   // 1) Receba, por parâmetro, o nome, a idade e o e-mail de algumas pessoas em uma lista;
 
-  var pessoas = [{
-      nome: "Pedro",
-      idade: 0,
-      email: "joao@provedor.com.br",
-    },
-    {
-      nome: "João",
-      idade: 11,
-      email: "joao@provedor.com.br",
-    },
-    {
-      nome: "Maria",
-      idade: 12,
-      email: "maria@provedor.com.br",
-    },
-    {
-      nome: "José",
-      idade: 17,
-      email: "jose@provedor.com.br",
-    },
-    {
-      nome: "Joaquim",
-      idade: 18,
-      email: "joaquim@provedor.com.br",
-    },
-    {
-      nome: "Manoel",
-      idade: 25,
-      email: "manoel@provedor.com.br",
-    },
+  const pessoas = [{
+    nome: "Pedro",
+    idade: 0,
+    email: "joao@provedor.com.br",
+  },
+  {
+    nome: "João",
+    idade: 11,
+    email: "joao@provedor.com.br",
+  },
+  {
+    nome: "Maria",
+    idade: 12,
+    email: "maria@provedor.com.br",
+  },
+  {
+    nome: "José",
+    idade: 17,
+    email: "jose@provedor.com.br",
+  },
+  {
+    nome: "Joaquim",
+    idade: 18,
+    email: "joaquim@provedor.com.br",
+  },
+  {
+    nome: "Manoel",
+    idade: 25,
+    email: "manoel@provedor.com.br",
+  },
   ];
 
   function forEach(listaPessoas, callback) {
@@ -45,11 +45,11 @@ function listaPessoas() {
   console.table(pessoas);
 
   // 2) Navegue nessa lista e apresente os dados das pessoas no console, classificando:
-  // os menores de 12 anos como "crianças", 
+  // os menores de 12 anos como "crianças",
   // os que tem entre 12 e 17 anos como "adolescentes" e,
   // os maiores de 18 anos como "adultos".
 
-  forEach(pessoas, function(index, item) {
+  forEach(pessoas, function (index, item) {
 
     if (item.idade >= 0 && item.idade <= 11) {
       console.log(item.nome + " é criança. Tem " + item.idade + " anos e seu e-mail é " + item.email + ".");
@@ -69,6 +69,8 @@ function listaPessoas() {
   console.log("O número de pessoas listadas é " + pessoas.length + " no total.");
 
   console.log("Fim");
+
+  module.exports = pessoas;
 }
 
 listaPessoas();

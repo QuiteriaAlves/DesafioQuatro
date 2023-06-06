@@ -1,9 +1,8 @@
 const assert = require('assert');
-import { pessoas }  from "../DesafioQuatro/desafioQuatro";
+const pessoas = require('../DesafioQuatro/desafioQuatro');
 
 describe('Tamanho da lista de nomes', function () {
     it('deve ter 6 itens', function () {
-        const teste = [1, 2, 3, 4, 4, 5];
-        assert.strictEqual(teste.length, 6);
+        assert.strictEqual(pessoas.length, 6);
     });
 });
