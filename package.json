@@ -1,5 +1,31 @@
 {
   "dependencies": {
-    "chai": "^4.3.7"
+    "chai": "^4.5.0",
+    "cypress": "^14.0.3"
+  },
+  "name": "desafioquatro",
+  "version": "1.0.0",
+  "description": "Crie um método/função em JavaScript que:\r 1) Receba por parâmetro o nome, idade e e-mail de algumas pessoas em uma lista;\r 2) Navegue nessa lista e apresente os dados das pessoas no Console, classificando os menores de 12 anos como \"crianças\", os que tem entre 12 e 17 anos como \"adolescentes\" e os maiores que 17 como \"adultos\";\r 3) Retorne o número de pessoas contidas na lista;\r 4) Valide o total da lista utilizando a biblioteca mocha do JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "mocha test/validacao.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuiteriaAlves/DesafioQuatro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuiteriaAlves/DesafioQuatro/issues"
+  },
+  "homepage": "https://github.com/QuiteriaAlves/DesafioQuatro#readme",
+  "devDependencies": {
+    "mocha": "^11.1.0"
+  },
+  "directories": {
+    "test": "test"
   }
 }
