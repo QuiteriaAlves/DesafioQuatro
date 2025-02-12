@@ -7,9 +7,9 @@ jobs:
       # Passo 1: Faz checkout do código do repositório
       - name: Checkout code
         uses: actions/checkout@v3
-      # Passo 2: Instala as dependências (incluindo o Mocha)
-      - name: Install dependencies
-        run: npm install
+      # Passo 2: Instala o Mocha
+      - name: Install dependencies (mocha)
+        run: npm install mocha
       # Passo 3: Executa os testes
       - name: start
         run: node src/index.js
