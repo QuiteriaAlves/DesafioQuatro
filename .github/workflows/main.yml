@@ -13,5 +13,5 @@ jobs:
       # Passo 3: Executa os testes
       - name: start
         run: node src/index.js
-      - name: test
-        run: mocha test/validacao.js
+      - name: Run tests
+        run: npm test
