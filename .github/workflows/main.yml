@@ -13,5 +13,5 @@ jobs:
       # Passo 3: Executa os testes
       - name: start
         run: npm run start
-      - name: Run tests
+      - name: test
         run: npm run test
