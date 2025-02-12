@@ -1,10 +1,21 @@
-name: End-to-end tests
+name: CI
 on: push
+
 jobs:
-  cypress-run:
-    runs-on: ubuntu-22.04
+  test:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
+      # Passo 1: Faz checkout do código do repositório
+      - name: Checkout code
+        uses: actions/checkout@v3
+      # Passo 2: Configura o Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18 # Use a versão do Node.js que seu projeto precisa
+      # Passo 3: Instala as dependências
+      - name: Install dependencies
+        run: npm install
+      # Passo 4: Executa os testes
+      - name: Run tests
+        run: npm test
